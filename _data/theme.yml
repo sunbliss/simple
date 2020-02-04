@@ -7,18 +7,18 @@ t:
   skip_primary_nav: "Skip to primary navigation"
   skip_content: "Skip to content"
   skip_footer: "Skip to footer"
-  menu: "Menu"
-  home: "Home"
-  newer: "Newer"
-  older: "Older"
+  menu: "Μενού"
+  home: "Αρχική"
+  newer: "Νεότερα"
+  older: "Παλαιότερα"
   email: "Email"
-  subscribe: "Subscribe"
-  read_more: "Read More"
-  posts: "Posts"
-  page: "Page"
-  of: "of"
-  min_read: "min read"
-  present: "Present"
+  subscribe: "Εγγραφή"
+  read_more: "Περισσότερα"
+  posts: "Αναρτήσεις"
+  page: "Σελίδα"
+  of: "από"
+  min_read: "λεπτά ανάγνωσης"
+  present: "Σήμερα"
 
 # Google Fonts
 google_fonts:
@@ -31,8 +31,5 @@ google_fonts:
 
 navigation_pages:
   - posts.md
-  - recipes.md
-  - about.md
-  - cv.md
   - tags.md
   - categories.md
