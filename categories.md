@@ -1,5 +1,5 @@
 ---
-title: Category Archive
+title: Κατηγορίες
 layout: categories
 permalink: /categories/
 ---
