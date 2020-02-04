@@ -1,5 +1,5 @@
 ---
-title: Tag Archive
+title: Ετικέτες
 layout: tags
 permalink: /tags/
 ---
