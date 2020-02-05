@@ -24,7 +24,7 @@
           <span class="byline-item">{{ author_name | prepend: 'by ' }}</span>{% endif %}
           <span class="byline-item">
             <span class="icon">{% include icon-calendar.svg %}</span>
-            <span class="post-meta">{% include translated_date.html date=post.date format=site.date_format %}</span>
+            <span class="post-meta">{% include translated_date.html date=post.date format="%-d %B %Y" lang="el" %}</span>
             <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
           </span>
           {% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}
