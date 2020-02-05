@@ -21,8 +21,7 @@
         {% include author %}
         <p class="entry-meta">
           {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'από ' }}</span>{% endif %}<span class="byline-item"><span class="icon">{% include icon-calendar.svg %}</span>
-          <time datetime="{{ page.date | html5date }}">{{ page.date | date: "%-d %m %Y" }}</time>
-           {% capture month %}{{ post.date | date: "%-d %m %Y" }}{% endcapture %}
+          {% capture month %}{{ post.date | date: "%-d %-m %Y" }}{% endcapture %}
   {% if current_month != month %}
     {% assign current_month = month %}
     {% case month %}
