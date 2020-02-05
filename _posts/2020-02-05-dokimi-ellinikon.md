@@ -1,10 +1,9 @@
 ---
 title: "Δοκιμή Ελληνικών"
 excerpt: "δοκιμή δοκιμή δοκιμή"
-last_modified_at: 2017-03-09
+date: 5 Φεβρουαρίου 2020
 tags: 
-  - code
-  - syntax highlighting
+  - greek
 lang: el
 ---
 
