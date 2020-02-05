@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: el
-locale: el
 title: SIMPLE
 email:  
 description: 
@@ -32,8 +31,6 @@ algolia:
   index_name: # YOUR_INDEX_NAME
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
-
-date_format: "στις %-d %M %Y"
 
 # Liquid
 liquid:
