@@ -25,7 +25,7 @@
           <span class="byline-item">
             <span class="icon">{% include icon-calendar.svg %}</span>
             {{ post.date | greek_long_month }}
-            <span class="post-meta">{% include translated_date.html date=page.date format="%-d %M %Y" lang="el" %}</span>
+            <span class="post-meta">{% include translated_date.html date=page.date format="%-d %m %Y" lang="el" %}</span>
           </span>
           {% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}
         </p>
