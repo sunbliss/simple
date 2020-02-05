@@ -21,7 +21,7 @@
         {% include author %}
         <p class="entry-meta">
           {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'από ' }}</span>{% endif %}<span class="byline-item"><span class="icon">{% include icon-calendar.svg %}</span>
-          <time class="entry-time" datetime="{{ post.date | html5date }}">{{ post.date | date: "%D %M %Y" }}</time>
+          <time class="entry-time" datetime="{{ post.date | html5date }}">{{ post.date | date: "%d %m %y" }}</time>
           </span>{% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}
         </p>
       {% endif %}
