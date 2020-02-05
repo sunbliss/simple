@@ -6,4 +6,4 @@ module DateFilter
   end
 end
 
-Liquid::Template.register_filter(DateFilter)
+Liquid::Template.register_filter(Jekyll::DateFilter)
