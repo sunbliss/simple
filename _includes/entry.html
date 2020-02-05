@@ -21,8 +21,7 @@
   <footer class="entry-meta">
     <ul>
     {% if post.date %}
-      <li><span class="icon">{% include icon-calendar.svg %}</span>
-        <li><span class="icon">{% include icon-calendar.svg %}</span><time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %M %Y" }}</time></li>
+      <li><span class="icon">{% include icon-calendar.svg %}</span><time class="entry-time" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %-m %Y" }}</time></li>
       </li>
     {% endif %}
     {% if post.read_time %}
