@@ -39,7 +39,6 @@ liquid:
 # Build settings
 markdown: kramdown
 permalink: pretty
-theme: jekyll-theme-basically-basic
 plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
@@ -63,12 +62,6 @@ paginate_path: "/simple/page:num/"
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-# Collections
-collections:
-  recipes:
-    output: true
-    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
