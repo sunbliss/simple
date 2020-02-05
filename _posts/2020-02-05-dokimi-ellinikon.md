@@ -4,7 +4,7 @@ excerpt: "δοκιμή δοκιμή δοκιμή"
 date: 05-02-2020
 tags: 
   - greek
-lang: el
+lang: el-GR
 ---
 
 δοκιμή δοκιμή δοκιμή
