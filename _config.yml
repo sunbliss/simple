@@ -14,15 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: el
-locale: gr
+locale: el
 title: SIMPLE
 email:  
 description: 
 url: "https://sunbliss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/simple"  # the subpath of your site, e.g. /blog
 author: 
-  name: ""
-  picture: "https://api.adorable.io/avatars/285/johndoe.png"
+  name: "διαχειριστής"
+  picture: "/assets/icons/LOGO_BRAND.svg"
 logo: "/assets/icons/LOGO_BRAND.svg"
 search: true
 search_full_content: true
