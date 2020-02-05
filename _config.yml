@@ -33,7 +33,7 @@ algolia:
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
 
-date_format: "στις %-d %B %Y"
+date_format: "στις %-d %M %Y"
 
 # Liquid
 liquid:
