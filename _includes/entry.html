@@ -22,7 +22,7 @@
     <ul>
     {% if post.date %}
       <li><span class="icon">{% include icon-calendar.svg %}</span>
-        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d - %m - %Y" }}</time>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d- %m- %Y" }}</time>
       </li>
     {% endif %}
     {% if post.read_time %}
