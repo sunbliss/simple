@@ -21,30 +21,7 @@
         {% include author %}
         <p class="entry-meta">
           {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'από ' }}</span>{% endif %}<span class="byline-item"><span class="icon">{% include icon-calendar.svg %}</span>
-          {% capture month %}{{ post.date | date: "%m" }}{% endcapture %}
-  {% if current_month != month %}
-    {% assign current_month = month %}
-    {% case month %}
-      {% when "01" %}Ιανουαρίου {{ year }}
-      {% when "02" %}Φεβρουαρίου {{ year }}
-      {% when "03" %}Μαρτίου {{ year }}
-      {% when "04" %}Απριλίου {{ year }}
-      {% when "05" %}Μαϊου {{ year }}
-      {% when "06" %}Ιουνίου {{ year }}
-      {% when "07" %}Ιουλίου {{ year }}
-      {% when "08" %}Αυγούστου {{ year }}
-      {% when "09" %}Σεπτεμβρίου {{ year }}
-      {% when "10" %}Οκτωβρίου {{ year }}
-      {% when "11" %}Νοεμβρίου {{ year }}
-      {% when "12" %}Δεκεμβρίου {{ year }}
-    {% endcase %}
-  {% endif %}
-          {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% if current_year != year %}
-    {% assign current_year = year %}
-    {% assign current_month = "" %}
-   {{ year }}
-  {% endif %}
+          <time class="entry-time" datetime="{{ post.date | html5date }}">{{ post.date | date: "%D %M %Y" }}</time>
           </span>{% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}
         </p>
       {% endif %}
