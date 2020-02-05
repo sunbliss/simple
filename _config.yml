@@ -21,8 +21,8 @@ description:
 url: "https://sunbliss.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/simple"  # the subpath of your site, e.g. /blog
 author: 
-  name: "διαχειριστής"
-  picture: "/assets/icons/LOGO_BRAND.svg"
+  name: "Διαχειριστής Σελίδας"
+  picture: "/assets/images/100x100.png"
 logo: "/assets/icons/LOGO_BRAND.svg"
 search: true
 search_full_content: true
