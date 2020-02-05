@@ -20,7 +20,27 @@
       {% if page.date %}
         {% include author %}
         <p class="entry-meta">
-          {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'από ' }}</span>{% endif %}<span class="byline-item"><span class="icon">{% include icon-calendar.svg %}</span><time datetime="{{ page.date | greek_long_month }}">{{ page.date | date: "%D %m %Y" }}</time></span>{% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}
+          {% if author_name %}<span class="byline-item">{{ author_name | prepend: 'από ' }}</span>{% endif %}<span class="byline-item"><span class="icon">{% include icon-calendar.svg %}</span>
+          <time datetime="{{ page.date | greek_long_month }}">{{ page.date | date: "%D %m %Y" }}</time>
+           {% capture month %}{{ post.date | date: "%m" }}{% endcapture %}
+  {% if current_month != month %}
+    {% assign current_month = month %}
+### {% case month %}
+      {% when "01" %}Janvier {{ year }}
+      {% when "02" %}Φεβρουαρίου {{ year }}
+      {% when "03" %}Mars {{ year }}
+      {% when "04" %}Avril {{ year }}
+      {% when "05" %}Mai {{ year }}
+      {% when "06" %}Juin {{ year }}
+      {% when "07" %}Juillet {{ year }}
+      {% when "08" %}Août {{ year }}
+      {% when "09" %}Septembre {{ year }}
+      {% when "10" %}Octobre {{ year }}
+      {% when "11" %}Novembre {{ year }}
+      {% when "12" %}Décembre {{ year }}
+    {% endcase %}
+  {% endif %}
+          </span>{% if page.read_time %} <span class="byline-item"><span class="icon">{% include icon-stopwatch.svg %}</span>{% capture read_time %}{% include read-time.html %}{% endcapture %}{{ read_time | strip }}</span>{% endif %}
         </p>
       {% endif %}
 
